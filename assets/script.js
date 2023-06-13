@@ -17,6 +17,7 @@ const slides = [
 	}
 ]
 
+
 let currentSlide = 0;
 
 const createDot = () => {
@@ -36,7 +37,6 @@ const changeBulletPoint = (position) => {
    });
 }
 
-
 const slider = (direction) => {
 	currentSlide = currentSlide + direction;
 
@@ -55,7 +55,6 @@ document.querySelector('.arrow_left').addEventListener('click', () => {
    console.log('Previous Slide');
    slider(-1);
 });
-
 
 document.querySelector('.arrow_right').addEventListener('click', () => {
 	console.log('Next Slide');
